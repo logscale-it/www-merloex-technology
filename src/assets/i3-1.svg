@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 979">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f7f9fd"/>
+      <stop offset="1" stop-color="#e7ebf4"/>
+    </linearGradient>
+  </defs>
+  <rect width="980" height="979" fill="url(#bg)"/>
+  <circle cx="490" cy="490" r="380" fill="#dde5f2"/>
+
+  <!-- building behind -->
+  <g opacity="0.7">
+    <rect x="180" y="250" width="260" height="500" rx="10" fill="#aab8d2"/>
+    <g fill="#e7ebf4">
+      <rect x="210" y="284" width="50" height="60" rx="5"/>
+      <rect x="284" y="284" width="50" height="60" rx="5"/>
+      <rect x="358" y="284" width="50" height="60" rx="5"/>
+      <rect x="210" y="374" width="50" height="60" rx="5"/>
+      <rect x="284" y="374" width="50" height="60" rx="5"/>
+      <rect x="358" y="374" width="50" height="60" rx="5"/>
+      <rect x="210" y="464" width="50" height="60" rx="5"/>
+      <rect x="284" y="464" width="50" height="60" rx="5"/>
+      <rect x="358" y="464" width="50" height="60" rx="5"/>
+      <rect x="210" y="554" width="50" height="60" rx="5"/>
+      <rect x="358" y="554" width="50" height="60" rx="5"/>
+    </g>
+    <rect x="284" y="640" width="50" height="110" rx="5" fill="#8a94a6"/>
+  </g>
+  <rect x="120" y="744" width="740" height="24" rx="10" fill="#aab2c2"/>
+
+  <!-- shield -->
+  <g transform="translate(600 470)">
+    <path d="M 0 -240 L 200 -160 V 20 C 200 135 110 210 0 262 C -110 210 -200 135 -200 20 V -160 Z" fill="#3259a8"/>
+    <path d="M 0 -196 L 156 -134 V 16 C 156 108 84 170 0 214 C -84 170 -156 108 -156 16 V -134 Z" fill="none" stroke="#5b83cf" stroke-width="10"/>
+    <path d="M -84 10 L -22 74 L 104 -66" fill="none" stroke="#ffffff" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- gear -->
+  <g transform="translate(210 170)">
+    <g fill="#4d78c8">
+      <rect x="-10" y="-62" width="20" height="20" rx="5"/>
+      <rect x="-10" y="42" width="20" height="20" rx="5"/>
+      <rect x="-62" y="-10" width="20" height="20" rx="5"/>
+      <rect x="42" y="-10" width="20" height="20" rx="5"/>
+      <g transform="rotate(45)">
+        <rect x="-10" y="-62" width="20" height="20" rx="5"/>
+        <rect x="-10" y="42" width="20" height="20" rx="5"/>
+        <rect x="-62" y="-10" width="20" height="20" rx="5"/>
+        <rect x="42" y="-10" width="20" height="20" rx="5"/>
+      </g>
+    </g>
+    <circle r="48" fill="#4d78c8"/>
+    <circle r="22" fill="#dde5f2"/>
+  </g>
+</svg>

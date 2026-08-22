@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 768 768">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f7f9fd"/>
+      <stop offset="1" stop-color="#e7ebf4"/>
+    </linearGradient>
+  </defs>
+  <rect width="768" height="768" fill="url(#bg)"/>
+  <circle cx="384" cy="384" r="300" fill="#dde5f2"/>
+
+  <!-- building silhouette -->
+  <g opacity="0.55">
+    <rect x="420" y="180" width="180" height="290" rx="8" fill="#aab8d2"/>
+    <g fill="#e7ebf4">
+      <rect x="444" y="208" width="34" height="42" rx="4"/>
+      <rect x="494" y="208" width="34" height="42" rx="4"/>
+      <rect x="544" y="208" width="34" height="42" rx="4"/>
+      <rect x="444" y="272" width="34" height="42" rx="4"/>
+      <rect x="494" y="272" width="34" height="42" rx="4"/>
+      <rect x="544" y="272" width="34" height="42" rx="4"/>
+      <rect x="444" y="336" width="34" height="42" rx="4"/>
+      <rect x="494" y="336" width="34" height="42" rx="4"/>
+      <rect x="544" y="336" width="34" height="42" rx="4"/>
+    </g>
+  </g>
+
+  <!-- floor -->
+  <rect x="120" y="560" width="528" height="26" rx="10" fill="#aab2c2"/>
+
+  <!-- broom -->
+  <g transform="translate(270 340) rotate(18)">
+    <rect x="-9" y="-190" width="18" height="270" rx="9" fill="#8a6f52"/>
+    <path d="M -34 80 h68 l 22 96 h-112 z" fill="#f2a63b"/>
+    <g stroke="#d88f24" stroke-width="6" stroke-linecap="round">
+      <line x1="-24" y1="110" x2="-30" y2="168"/>
+      <line x1="0" y1="112" x2="0" y2="170"/>
+      <line x1="24" y1="110" x2="30" y2="168"/>
+    </g>
+  </g>
+
+  <!-- bucket -->
+  <g transform="translate(470 500)">
+    <path d="M -74 -40 L 74 -40 L 58 88 L -58 88 Z" fill="#3259a8"/>
+    <ellipse cx="0" cy="-40" rx="74" ry="16" fill="#4d78c8"/>
+    <path d="M -58 -44 A 58 46 0 0 1 58 -44" fill="none" stroke="#8a94a6" stroke-width="10" stroke-linecap="round"/>
+    <ellipse cx="0" cy="-42" rx="52" ry="10" fill="#bcd2f2"/>
+  </g>
+
+  <!-- sparkles -->
+  <g fill="#4d78c8">
+    <path d="M 196 200 l 7 22 22 7 -22 7 -7 22 -7 -22 -22 -7 22 -7 z"/>
+    <path d="M 560 520 l 6 18 18 6 -18 6 -6 18 -6 -18 -18 -6 18 -6 z"/>
+    <path d="M 150 470 l 5 16 16 5 -16 5 -5 16 -5 -16 -16 -5 16 -5 z"/>
+  </g>
+</svg>
