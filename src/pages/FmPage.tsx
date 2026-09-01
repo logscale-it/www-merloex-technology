@@ -18,15 +18,17 @@ export default function FmPage({ data }: { data: FmPageData }) {
   return (
     <>
       <Hero image={data.heroImage} wide>
+        <span className="eyebrow">Leistungen</span>
         <h1>{data.title}</h1>
         <p>{data.intro}</p>
         <CtaButtons />
       </Hero>
 
-      <section className="section">
-        <div className="container">
+      <section className="section section-white">
+        <div className="container copy">
+          <span className="eyebrow">Leistungsumfang</span>
           <h2>{data.scopeTitle}</h2>
-          <ul className="check-list grid-list" style={{ marginTop: '2rem' }}>
+          <ul className="check-list grid-list" style={{ marginTop: '2.5rem' }}>
             {data.scopeItems.map(item => <li key={item}>{item}</li>)}
           </ul>
         </div>
@@ -35,18 +37,18 @@ export default function FmPage({ data }: { data: FmPageData }) {
       <section className="section">
         <div className="container two-col">
           <div className="rounded"><img src={data.detailImage} alt="" /></div>
-          <div>
+          <div className="copy">
             <h2>{data.detailTitle}</h2>
-            <p style={{ marginTop: '1rem' }}>{data.detailBody}</p>
+            <p>{data.detailBody}</p>
           </div>
         </div>
       </section>
 
       {data.banner && (
         <section className="section section-tinted">
-          <div className="container section-intro" style={{ margin: '0 auto' }}>
+          <div className="container section-intro copy" style={{ marginBottom: 0 }}>
             <h2>{data.banner.title}</h2>
-            <p style={{ marginTop: '1rem' }}>{data.banner.body}</p>
+            <p>{data.banner.body}</p>
           </div>
         </section>
       )}

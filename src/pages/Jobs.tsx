@@ -24,12 +24,17 @@ export default function Jobs() {
   return (
     <>
       <Hero image={fs6} wide>
-        <h1>Jobs</h1>
-        <p>Wir sind stehts auf der Suche nach qualifizierten und zuverlässigen Mitarbeitern.</p>
+        <span className="eyebrow">Karriere</span>
+        <h1>Jobs bei <span>Merloex</span></h1>
+        <p>Wir sind stets auf der Suche nach qualifizierten und zuverlässigen Mitarbeitern.</p>
       </Hero>
 
-      <section className="section">
+      <section className="section section-white">
         <div className="container">
+          <div className="section-intro">
+            <span className="eyebrow">Offene Stellen</span>
+            <h2>Werden Sie Teil <span>unseres Teams</span></h2>
+          </div>
           <div className="job-cards">
             {jobs.map(job => (
               <div className="job-card" key={job.title}>
@@ -45,13 +50,14 @@ export default function Jobs() {
       </section>
 
       <section className="section section-tinted">
-        <div className="container">
+        <div className="container copy">
+          <span className="eyebrow">Bewerbung</span>
           <h2>Bewerbungsformular</h2>
-          <p style={{ margin: '0.5rem 0 2rem' }}>
+          <p>
             Nutzen Sie unser Bewerbungsformular, um sich einfach und schnell zu bewerben.
             Lebenslauf und Zeugnisse können Sie der E-Mail als Anhang beifügen.
           </p>
-          <form className="form" onSubmit={e => mailtoSubmit(e, 'Bewerbung über merloex.de')}>
+          <form className="form" style={{ marginTop: '2rem' }} onSubmit={e => mailtoSubmit(e, 'Bewerbung über merloex.de')}>
             <select name="Anrede" required defaultValue="">
               <option value="" disabled>Anrede*</option>
               <option value="Frau">Frau</option>

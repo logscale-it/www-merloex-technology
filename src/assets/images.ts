@@ -23,3 +23,6 @@ import p2 from './p2-1.svg'
 import p3 from './p3-1.svg'
 
 export { logo, fspb, l1, l2, l3, i1, i2, i3, i4, i5, b, fs2, fs3, fs4, fs5, fs6, p1, p2, p3 }
+// hero.jpg: architectural photo generated in the Stitch "Merloex Professional Redesign" project.
+import hero from './hero.jpg'
+export { hero }
